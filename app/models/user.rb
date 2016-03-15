@@ -1,4 +1,19 @@
 class User < ActiveRecord::Base
+
+# VALIDATIONS (Start) ===================================================================
+  validates  :email,                                    :presence  => true
+  validates  :name,                                   :presence  => true
+# VALIDATIONS (End)
+
+# DEFAULTS (Start) ======================================================================
+
+# DEFAULTS (End)
+
+# ASSOCIATIONS (Start) ==================================================================
+  has_one   :user_profile
+# ASSOCIATIONS (End)
+
+
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
 
