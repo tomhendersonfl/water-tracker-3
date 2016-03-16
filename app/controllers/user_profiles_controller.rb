@@ -41,6 +41,10 @@ class UserProfilesController < ApplicationController
   # PATCH/PUT /user_profiles/1
   # PATCH/PUT /user_profiles/1.json
   def update
+    uploaded_io = params[:user_profile][:picture]
+    File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
+      file.write(uploaded_io.read)
+    end
     respond_to do |format|
       if @user_profile.update(user_profile_params)
         format.html { redirect_to @user_profile, notice: 'User profile was successfully updated.' }

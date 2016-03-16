@@ -29,6 +29,12 @@
       </div>
     </fieldset>
 
+    <fieldset>
+      <div class="form-group">
+        <%= f.label :profile_picture %>
+        <%= f.file_field :picture %>
+      </div>
+    </fieldset>
     <%= f.submit 'Update', :class => 'button right' %>
   <% end %>
 </div>
