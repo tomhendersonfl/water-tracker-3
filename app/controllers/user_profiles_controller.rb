@@ -19,6 +19,7 @@ class UserProfilesController < ApplicationController
 
   # GET /user_profiles/1/edit
   def edit
+    @user = current_user
   end
 
   # POST /user_profiles
