@@ -8,19 +8,21 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-group :development, :test do
-  gem 'byebug'
-end
-group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'high_voltage'
 gem 'simple_form'
+
 group :development do
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'byebug'
+  gem 'pry'
+  gem 'pry-rails'
 end
