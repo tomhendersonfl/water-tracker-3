@@ -1,11 +1,12 @@
 <h1>Editing User Profile</h1>
-
+<!--
 <div class="authform">
 <%= render 'form' %>
+
 <%= link_to 'Show', @user_profile %> |
 <%= link_to 'Back', user_profiles_path %>
 </div>
-
+-->
 <div class="authform">
   <%= form_for(@user.user_profile, html: { method: :patch }) do |f| %>
     <div class="form-group">

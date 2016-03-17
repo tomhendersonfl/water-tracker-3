@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160315184724) do
+ActiveRecord::Schema.define(version: 20160317170920) do
 
   create_table "user_profiles", force: :cascade do |t|
     t.string   "user_id"
