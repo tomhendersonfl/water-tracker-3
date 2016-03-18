@@ -20,6 +20,22 @@
 
     <fieldset>
       <p>Change your contact information here.</p>
+
+      <div class="form-group">
+        <%= f.label :address_1, "Address" %>
+        <%= f.text_field :address_1, class: 'form_control' %>
+        <%= f.text_field :address_2, class: 'form_control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :city %>
+        <%= f.text_field :city, class: 'form_control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :state %>
+        <%= f.text_field :state, maxlength: 2, class: 'form_control' %>
+        <%= f.label :postal_code, "Zip" %>
+        <%= f.text_field :postal_code, maxlength: 9, class: 'form_control' %>
+      </div>
       <div class="form-group">
         <%= f.label :phone_number %>
         <%= f.text_field :phone_number, class: 'form-control' %>
@@ -27,6 +43,14 @@
       <div class="form-group">
         <%= f.label :mobile_number %>
         <%= f.text_field :mobile_number, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :facebook_user %>
+        <%= f.text_field :facebook_user, class: 'form-control' %>
+      </div>
+            <div class="form-group">
+        <%= f.label :twitter_handle %>
+        <%= f.text_field :twitter_handle, class: 'form-control' %>
       </div>
     </fieldset>
 
