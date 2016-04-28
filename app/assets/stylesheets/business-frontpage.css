@@ -8,8 +8,7 @@
 
 .business-header {
     height: 200px;
-/*    background: url('http://placehold.it/1920x400') center center no-repeat scroll; */
-    background: url("Goldwater-Project_375x90.png") center top no-repeat scroll;
+    background: url('http://placehold.it/1920x400') center center no-repeat scroll;
     background-color: #000000;
     background-size: 375 px 90 px;
 /*    -webkit-background-size: cover; */
